@@ -2,22 +2,22 @@
 
 :root {
     /** Primary Colors **/
-    --gamebay-purple: #9B5DE5;
-    --gamebay-pink: #F15BB5;
-    --gamebay-gray: #333333;
+    --brand-purple: #9B5DE5;
+    --brand-pink: #F15BB5;
+    --brand-gray: #333333;
+    --brand-white: #FBFBFB;
 
     /** Secondary Colors **/
-    --gamebay-blue: #00BBF9;
-    --gamebay-green: #00F5D4;
-    --gamebay-yellow: #FEE440;
+    --brand-blue: #00BBF9;
+    --brand-green: #00F5D4;
+    --brand-yellow: #FEE440;
 
     /** Extra Colors **/
-    --gamebay-light-purple: #F5EFFC;
-    --gamebay-light-gray: #7C7C7C;
+    --light-purple: #F5EFFC;
+    --light-gray: #7C7C7C;
     --highlighted-pink: #E936A1;
-    --gamebay-white: #FBFBFB;
 
     /** Default Colors **/
-    --white-normal: #fff;
-    --black-normal: #000;
+    --white: #fff;
+    --black: #000;
 }
