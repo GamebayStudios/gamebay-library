@@ -4,11 +4,16 @@ body{
 }
 
 /** NavBar **/
+.header-home {
+    width: 100%;
+    position: fixed;
+    background-color: var(--brand-white);
+}
+
 .nav-bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 8px;
+    padding: 8px 5%;
     box-shadow: 0px 4px 10px 2px rgba(153, 153, 153, 0.2);
 }
 
@@ -16,18 +21,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5%;
     cursor: pointer;
 }
 
 .nav-bar .logo img {
     width: 102px;
+    height: 23px;
 }
 
 .nav-bar .searcher {
+    width: 80%;
     display: flex;
     flex-direction: row;
     gap: 0;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 
 .nav-bar .searcher .categories .categories-select {
@@ -53,7 +61,7 @@ body{
 
 .nav-bar .searcher .search {
     all: unset;
-    width: 467px;
+    width: 100%;
     font-family: var(--merriweather-font);
     font-weight: var(--regular);
     background-color: var(--light-purple);
@@ -63,12 +71,23 @@ body{
     border-left: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.nav-bar .btn-login, .btn-sign-up {
-    padding: 8px 34px;
+.nav-bar .content-btn {
     margin: auto;
+    float: left;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar .btn-login, .btn-sign-up {
+    width: 100px;
+    height: 30px;
     cursor: pointer;
     border-radius: 50px;
     transition: 0.5s ease background-color;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-bar .btn-login:hover, .btn-sign-up:hover {
@@ -81,15 +100,41 @@ body{
     font-weight: 400;
     font-size: 12px;
     color: var(--brand-gray);
+    text-align: center;
+}
+
+.nav-bar .btn-create {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--brand-pink);
+    transition: 0.5s ease background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar .btn-create:hover {
+    background-color: var(--highlighted-pink);
+}
+
+.nav-bar .btn-create a {
+    text-decoration: none;
+    font-family: 'Merriweather Sans';
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--brand-white);
+    text-align: center;
 }
 
 /** Hero Section **/
-
 .hero-section{
     margin-left: 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 70px;
 }
 
 .hero-section .hero-img{
@@ -102,17 +147,13 @@ body{
     font-weight: var(--bold);
     font-size: 15px;
     text-align: center;
-    
     width: 327px;
-    
     padding-top:10px;
     padding-bottom:10px;
     padding-left: 5px;
-
     background-color: var(--brand-pink);
     border-radius: 10px;
     border:none;
-
 }
 
 .hero-section .hero-text .call-to-action a {
@@ -123,21 +164,17 @@ body{
 
 .hero-section .hero-text .hero-title{
     width: 985px;
-    
     font-family: var(--ubuntu-font);
     font-weight: var(--bold);
     font-size: 35pt;
-
     margin-bottom: 5px;
 }
 
 .hero-section .hero-text .hero-subtitle{
     width: 397px;
-
     font-family: var(--merriweather-font);
     font-weight: var(--bold);
     font-size: 18pt;
-
     margin-top:5px;
 }
 
