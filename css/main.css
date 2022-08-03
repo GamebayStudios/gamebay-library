@@ -1,0 +1,7 @@
+/*! SETTINGS !*/
+@import "settings/normalize.css";
+@import "settings/colors.css";
+@import "settings/fonts.css";
+
+/*! PAGES !*/
+@import "pages/home.css";
