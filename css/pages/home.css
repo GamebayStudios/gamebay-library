@@ -3,7 +3,7 @@ body{
     color: var(--brand-gray);   
 }
 
-/** NavBar **/
+/*? --------------------- NavBar --------------------- **/
 .header-home {
     width: 100%;
     position: fixed;
@@ -128,7 +128,8 @@ body{
     text-align: center;
 }
 
-/** Hero Section **/
+/*? --------------------- Hero Section --------------------- **/
+
 .hero-section{
     margin-left: 5%;
     display: flex;
@@ -138,37 +139,59 @@ body{
 }
 
 .hero-section .hero-img{
-    opacity: 0;
-    position: absolute;
+    height: 580px;
+    opacity: 100%;
+    position: relative;
+    top: 15%;
+    left: 40%;
+    overflow: hidden;
+}
+
+.hero-section .hero-text{
+    position:absolute;
+    left: 5%;
+    top:15%;
 }
 
 .hero-section .hero-text .call-to-action{
-    font-family: var(--merriweather-font);
-    font-weight: var(--bold);
-    font-size: 15px;
-    text-align: center;
     width: 327px;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left: 5px;
+    height: 51px;
+    cursor: pointer;
+    border-radius: 25px;
     background-color: var(--brand-pink);
-    border-radius: 10px;
-    border:none;
+    transition: 0.5s ease background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.hero-section .hero-text .call-to-action a {
-    text-decoration-color: var(--brand-white);
+.hero-section .hero-text .call-to-action:hover{
+    background-color: var(--highlighted-pink);
+}
+
+.hero-section .call-to-action a {
     text-decoration: none;
+    font-family: 'Merriweather Sans';
+    font-weight: 800;
+    font-size: 20px;
     color: var(--brand-white);
+    text-align: center;
 }
 
 .hero-section .hero-text .hero-title{
     width: 985px;
     font-family: var(--ubuntu-font);
     font-weight: var(--bold);
-    font-size: 35pt;
+    font-size: 40pt;
     margin-bottom: 5px;
-}
+    letter-spacing: -2px;
+    word-spacing: 10px;
+    
+    text-shadow: -2px 2px 2px white,
+                  2px 2px 1px white,
+                  2px -2px 1px white,
+                  -2px -2px 1px white;
+}   
 
 .hero-section .hero-text .hero-subtitle{
     width: 397px;
@@ -176,5 +199,10 @@ body{
     font-weight: var(--bold);
     font-size: 18pt;
     margin-top:5px;
+
+    text-shadow: -2px 2px 2px white,
+				  2px 2px 1px white,
+				  2px -2px 1px white,
+				  -2px -2px 1px white;
 }
 
