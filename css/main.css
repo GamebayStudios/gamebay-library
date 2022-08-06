@@ -3,5 +3,9 @@
 @import "settings/colors.css";
 @import "settings/fonts.css";
 
+/*! ICONS !*/
+@import "icons/style.css";
+
 /*! PAGES !*/
-@import "pages/home.css";
+@import "pages/home/home.css";
+@import "pages/home/card-project.css";

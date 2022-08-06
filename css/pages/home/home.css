@@ -1,6 +1,10 @@
-body{
+html, body {
     background-color: var(--brand-white);
-    color: var(--brand-gray);   
+    color: var(--brand-gray);  
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
 }
 
 /*? --------------------- NavBar --------------------- **/
@@ -220,7 +224,6 @@ body{
     background-color: var(--brand-purple);
 }
 
-
 .brand-subtitle {
     width: 100%;
     display: inline-block;
@@ -236,4 +239,11 @@ body{
 .features-subtitle { 
     color: var(--brand-white);
 }
+
 /* Trending Projects */
+.trending-projects {
+    width: 100%;
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
