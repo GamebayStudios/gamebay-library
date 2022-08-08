@@ -44,7 +44,7 @@ html, body {
 }
 
 .nav-bar .searcher .categories .categories-select {
-    height: 30px;
+    height: 14px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,20 +162,27 @@ html, body {
     /* width: 327px;
     height: 51px; */
 
+    display: inline-block;
+
     padding-top: 14px;
     padding-bottom: 14px;
     padding-left: 100px;
     padding-right: 100px;
 
     border: none;
-    cursor: pointer;
     border-radius: 25px;
+    
     background-color: var(--brand-pink);
     transition: 0.5s ease background-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    cursor: pointer;
+    
+}
 
+.hero-section .hero-text .call-to-action:hover{
+    background-color: var(--highlighted-pink);
+}
+
+.hero-section .hero-text .call-to-action a{
     text-decoration: none;
     font-family: var(--merriweather-font);
     font-weight: var(--bold);
@@ -184,18 +191,14 @@ html, body {
     text-align: center;
 }
 
-.hero-section .hero-text .call-to-action:hover{
-    background-color: var(--highlighted-pink);
-}
-
 .hero-section .hero-text .hero-title{
     width: 985px;
-    font-family: var(--ubuntu-font);
-    font-weight: var(--bold);
-    font-size: 40pt;
     margin-bottom: 5px;
     letter-spacing: -2%;
     word-spacing: 10px;
+    font-family: var(--ubuntu-font);
+    font-weight: var(--bold);
+    font-size: 40pt;
     
     text-shadow: -2px 2px 2px var(--brand-white),
                   2px 2px 1px var(--brand-white),
@@ -216,7 +219,7 @@ html, body {
 				  -2px -2px 1px var(--brand-white);
 }
 
-/* Features Section */
+/*? --------------------- Features section --------------------- **/
 
 .features-section{
     width: 100%;
@@ -234,11 +237,55 @@ html, body {
     word-spacing: 10px;
     text-align: center;
     margin-top: 30px;
+    color: var(--brand-white);
 }
 
 .features-subtitle { 
     color: var(--brand-white);
 }
+
+.card1 .white-bg{
+    left: 10%;
+    margin-top: -5%;
+    position: fixed;
+    display: flex;
+    width: 364px;
+    height: 208px;
+    background-color: var(--brand-white);
+    z-index: 1;
+
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 100%, 0 100%);
+}
+
+.card1 .pink-sign{
+    left: 11%;
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: relative;
+
+    background-color: var(--brand-pink);
+    z-index: 2;
+
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 80% 100%, 0 100%);
+}
+
+.card1 .card1-vector{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    position: inherit;
+    border: 1px;
+    border-color: var(--brand-yellow);
+}
+
+
+.features-cards{
+    filter: drop-shadow(0px 2px 10px rgba(0,0,0, .3));
+}
+
 
 /* Trending Projects */
 .trending-projects {
@@ -246,4 +293,6 @@ html, body {
     height: 100%; 
     margin: 0;
     padding: 0;
+
+    background-color: var(--brand-purple);
 }
