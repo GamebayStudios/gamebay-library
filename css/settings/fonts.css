@@ -1,7 +1,7 @@
 /*! FONTS !*/
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
     /*? Typos ?*/
@@ -9,6 +9,10 @@
     --ubuntu-font: 'Ubuntu';
 
     /*? Typos Weight ?*/
+    --light:300;
     --regular: 400;
+    --medium:500;
+    --semibold:600;
     --bold: 700;
+    --extra-bold:800;
 }
